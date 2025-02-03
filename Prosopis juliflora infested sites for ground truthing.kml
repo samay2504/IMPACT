@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="1y8hxtKPmbZtnPDkGMRf1W_eUYW3DGdKL">
+	<name>Prosopis juliflora infested sites for ground truthing</name>
+	<gx:CascadingStyle kml:id="__managed_style_2DDA488B3E31D09232EB">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_10713D0D0531D09232EB">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/rpc/cc/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0ED616A07831D09232EB">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_10713D0D0531D09232EB</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2DDA488B3E31D09232EB</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="036FEF353131585E4566">
+		<name>PJ_Site2</name>
+		<LookAt>
+			<longitude>73.09814896802212</longitude>
+			<latitude>26.43970122039896</latitude>
+			<altitude>253.5819162342568</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1292.310997032328</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ED616A07831D09232EB</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.09730351811102,26.4378392035546,0 73.10018820666772,26.44212322664206,0 73.09960387270208,26.44173684268014,0 73.09895461692994,26.44156980433629,0 73.09825131167392,26.44090226220194,0 73.09790510615602,26.4405537511539,0 73.09768446779944,26.44015956352224,0 73.09754752982778,26.43986823555871,0 73.09738974687305,26.43968945363836,0 73.09712649454639,26.43927510055287,0 73.09727487499019,26.4389089138767,0 73.09725482303907,26.43859034454842,0 73.09682288547445,26.43814656588821,0 73.09730351811102,26.4378392035546,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="01B9A3DEB631585F9350">
+		<name>PJ_site2</name>
+		<LookAt>
+			<longitude>73.09814896821099</longitude>
+			<latitude>26.43970122031442</latitude>
+			<altitude>253.581765318151</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1292.311182453122</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ED616A07831D09232EB</styleUrl>
+		<Point>
+			<coordinates>73.0982617964455,26.44002788953971,252.9157853881807</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DA04B675D3158623ACC">
+		<name>PJ_Site3</name>
+		<LookAt>
+			<longitude>73.09721083727537</longitude>
+			<latitude>26.43376954664376</latitude>
+			<altitude>251.3034939610319</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1054.665044620779</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ED616A07831D09232EB</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.09650506796731,26.43569992826993,0 73.09554616251852,26.43449760458796,0 73.09618725342438,26.43379255288793,0 73.09728348240411,26.43522358455605,0 73.09650506796731,26.43569992826993,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="01E2ED8E6C31586299A6">
+		<name>PJ_site3</name>
+		<LookAt>
+			<longitude>73.09721164431649</longitude>
+			<latitude>26.43376899749033</latitude>
+			<altitude>251.3050790533426</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1054.663468544022</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ED616A07831D09232EB</styleUrl>
+		<Point>
+			<coordinates>73.09636110519521,26.43485591241451,253.4349657248725</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="010ABA20C33158645539">
+		<name>PJ_site4</name>
+		<LookAt>
+			<longitude>73.07025205705759</longitude>
+			<latitude>26.39131852652874</latitude>
+			<altitude>261.1961711525462</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1007.825619495416</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ED616A07831D09232EB</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.07160197541926,26.39356786137138,0 73.06980660148551,26.39131120433134,0 73.07087762013811,26.39041021255766,0 73.07238016476759,26.39313297059571,0 73.07160197541926,26.39356786137138,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0AD58221283158649DE7">
+		<name>PJ_site4</name>
+		<LookAt>
+			<longitude>73.07025205705759</longitude>
+			<latitude>26.39131852652874</latitude>
+			<altitude>261.1961711525462</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>1007.825619495416</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0ED616A07831D09232EB</styleUrl>
+		<Point>
+			<coordinates>73.07115781253309,26.39214823099581,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

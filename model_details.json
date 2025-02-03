@@ -1,0 +1,1878 @@
+{
+    "inputs": [
+        {
+            "name": "sub_7",
+            "shape": [
+                1,
+                257,
+                257,
+                3
+            ],
+            "dtype": "numpy.float32"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "ResizeBilinear_3",
+            "shape": [
+                1,
+                257,
+                257,
+                21
+            ],
+            "dtype": "numpy.float32"
+        }
+    ],
+    "layers": [
+        {
+            "name": "AvgPool2D/AvgPool",
+            "index": 0,
+            "shape": [
+                1,
+                1,
+                1,
+                160
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/Conv/Conv2D_bias",
+            "index": 1,
+            "shape": [
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/Conv/Relu6",
+            "index": 2,
+            "shape": [
+                1,
+                129,
+                129,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/Conv/weights",
+            "index": 3,
+            "shape": [
+                16,
+                3,
+                3,
+                3
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv/depthwise/Relu6",
+            "index": 4,
+            "shape": [
+                1,
+                129,
+                129,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv/depthwise/depthwise_bias",
+            "index": 5,
+            "shape": [
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv/depthwise/depthwise_weights",
+            "index": 6,
+            "shape": [
+                1,
+                3,
+                3,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv/project/BatchNorm/FusedBatchNorm",
+            "index": 7,
+            "shape": [
+                1,
+                129,
+                129,
+                8
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv/project/Conv2D_bias",
+            "index": 8,
+            "shape": [
+                8
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv/project/weights",
+            "index": 9,
+            "shape": [
+                8,
+                1,
+                1,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/depthwise/Relu6",
+            "index": 10,
+            "shape": [
+                1,
+                65,
+                65,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/depthwise/depthwise_bias",
+            "index": 11,
+            "shape": [
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/depthwise/depthwise_weights",
+            "index": 12,
+            "shape": [
+                1,
+                3,
+                3,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/expand/Conv2D_bias",
+            "index": 13,
+            "shape": [
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/expand/Relu6",
+            "index": 14,
+            "shape": [
+                1,
+                129,
+                129,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/expand/weights",
+            "index": 15,
+            "shape": [
+                48,
+                1,
+                1,
+                8
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/project/BatchNorm/FusedBatchNorm",
+            "index": 16,
+            "shape": [
+                1,
+                65,
+                65,
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/project/Conv2D_bias",
+            "index": 17,
+            "shape": [
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_1/project/weights",
+            "index": 18,
+            "shape": [
+                12,
+                1,
+                1,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/depthwise/Relu6",
+            "index": 19,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/depthwise/depthwise_bias",
+            "index": 20,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/depthwise/depthwise_weights",
+            "index": 21,
+            "shape": [
+                1,
+                3,
+                3,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/expand/Conv2D_bias",
+            "index": 22,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/expand/Relu6",
+            "index": 23,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/expand/weights",
+            "index": 24,
+            "shape": [
+                192,
+                1,
+                1,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/project/BatchNorm/FusedBatchNorm",
+            "index": 25,
+            "shape": [
+                1,
+                33,
+                33,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/project/Conv2D_bias",
+            "index": 26,
+            "shape": [
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_10/project/weights",
+            "index": 27,
+            "shape": [
+                48,
+                1,
+                1,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/add",
+            "index": 28,
+            "shape": [
+                1,
+                33,
+                33,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/depthwise/Relu6",
+            "index": 29,
+            "shape": [
+                1,
+                33,
+                33,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/depthwise/depthwise_bias",
+            "index": 30,
+            "shape": [
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/depthwise/depthwise_weights",
+            "index": 31,
+            "shape": [
+                1,
+                3,
+                3,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/expand/Conv2D_bias",
+            "index": 32,
+            "shape": [
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/expand/Relu6",
+            "index": 33,
+            "shape": [
+                1,
+                33,
+                33,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/expand/weights",
+            "index": 34,
+            "shape": [
+                288,
+                1,
+                1,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/project/BatchNorm/FusedBatchNorm",
+            "index": 35,
+            "shape": [
+                1,
+                33,
+                33,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/project/Conv2D_bias",
+            "index": 36,
+            "shape": [
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_11/project/weights",
+            "index": 37,
+            "shape": [
+                48,
+                1,
+                1,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/add",
+            "index": 38,
+            "shape": [
+                1,
+                33,
+                33,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/depthwise/Relu6",
+            "index": 39,
+            "shape": [
+                1,
+                33,
+                33,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/depthwise/depthwise_bias",
+            "index": 40,
+            "shape": [
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/depthwise/depthwise_weights",
+            "index": 41,
+            "shape": [
+                1,
+                3,
+                3,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/expand/Conv2D_bias",
+            "index": 42,
+            "shape": [
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/expand/Relu6",
+            "index": 43,
+            "shape": [
+                1,
+                33,
+                33,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/expand/weights",
+            "index": 44,
+            "shape": [
+                288,
+                1,
+                1,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/project/BatchNorm/FusedBatchNorm",
+            "index": 45,
+            "shape": [
+                1,
+                33,
+                33,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/project/Conv2D_bias",
+            "index": 46,
+            "shape": [
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_12/project/weights",
+            "index": 47,
+            "shape": [
+                48,
+                1,
+                1,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/depthwise/Relu6",
+            "index": 48,
+            "shape": [
+                1,
+                33,
+                33,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/depthwise/depthwise_bias",
+            "index": 49,
+            "shape": [
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/depthwise/depthwise_weights",
+            "index": 50,
+            "shape": [
+                1,
+                3,
+                3,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/expand/Conv2D_bias",
+            "index": 51,
+            "shape": [
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/expand/Relu6",
+            "index": 52,
+            "shape": [
+                1,
+                33,
+                33,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/expand/weights",
+            "index": 53,
+            "shape": [
+                288,
+                1,
+                1,
+                48
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/project/BatchNorm/FusedBatchNorm",
+            "index": 54,
+            "shape": [
+                1,
+                33,
+                33,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/project/Conv2D_bias",
+            "index": 55,
+            "shape": [
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_13/project/weights",
+            "index": 56,
+            "shape": [
+                80,
+                1,
+                1,
+                288
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/add",
+            "index": 57,
+            "shape": [
+                1,
+                33,
+                33,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/depthwise/Relu6",
+            "index": 58,
+            "shape": [
+                1,
+                33,
+                33,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/depthwise/depthwise_bias",
+            "index": 59,
+            "shape": [
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/depthwise/depthwise_weights",
+            "index": 60,
+            "shape": [
+                1,
+                3,
+                3,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/expand/Conv2D_bias",
+            "index": 61,
+            "shape": [
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/expand/Relu6",
+            "index": 62,
+            "shape": [
+                1,
+                33,
+                33,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/expand/weights",
+            "index": 63,
+            "shape": [
+                480,
+                1,
+                1,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/project/BatchNorm/FusedBatchNorm",
+            "index": 64,
+            "shape": [
+                1,
+                33,
+                33,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/project/Conv2D_bias",
+            "index": 65,
+            "shape": [
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_14/project/weights",
+            "index": 66,
+            "shape": [
+                80,
+                1,
+                1,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/add",
+            "index": 67,
+            "shape": [
+                1,
+                33,
+                33,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/depthwise/Relu6",
+            "index": 68,
+            "shape": [
+                1,
+                33,
+                33,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/depthwise/depthwise_bias",
+            "index": 69,
+            "shape": [
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/depthwise/depthwise_weights",
+            "index": 70,
+            "shape": [
+                1,
+                3,
+                3,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/expand/Conv2D_bias",
+            "index": 71,
+            "shape": [
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/expand/Relu6",
+            "index": 72,
+            "shape": [
+                1,
+                33,
+                33,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/expand/weights",
+            "index": 73,
+            "shape": [
+                480,
+                1,
+                1,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/project/BatchNorm/FusedBatchNorm",
+            "index": 74,
+            "shape": [
+                1,
+                33,
+                33,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/project/Conv2D_bias",
+            "index": 75,
+            "shape": [
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_15/project/weights",
+            "index": 76,
+            "shape": [
+                80,
+                1,
+                1,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/depthwise/Relu6",
+            "index": 77,
+            "shape": [
+                1,
+                33,
+                33,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/depthwise/depthwise_bias",
+            "index": 78,
+            "shape": [
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/depthwise/depthwise_weights",
+            "index": 79,
+            "shape": [
+                1,
+                3,
+                3,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/expand/Conv2D_bias",
+            "index": 80,
+            "shape": [
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/expand/Relu6",
+            "index": 81,
+            "shape": [
+                1,
+                33,
+                33,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/expand/weights",
+            "index": 82,
+            "shape": [
+                480,
+                1,
+                1,
+                80
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/project/BatchNorm/FusedBatchNorm",
+            "index": 83,
+            "shape": [
+                1,
+                33,
+                33,
+                160
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/project/Conv2D_bias",
+            "index": 84,
+            "shape": [
+                160
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_16/project/weights",
+            "index": 85,
+            "shape": [
+                160,
+                1,
+                1,
+                480
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/add",
+            "index": 86,
+            "shape": [
+                1,
+                65,
+                65,
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/depthwise/Relu6",
+            "index": 87,
+            "shape": [
+                1,
+                65,
+                65,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/depthwise/depthwise_bias",
+            "index": 88,
+            "shape": [
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/depthwise/depthwise_weights",
+            "index": 89,
+            "shape": [
+                1,
+                3,
+                3,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/expand/Conv2D_bias",
+            "index": 90,
+            "shape": [
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/expand/Relu6",
+            "index": 91,
+            "shape": [
+                1,
+                65,
+                65,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/expand/weights",
+            "index": 92,
+            "shape": [
+                72,
+                1,
+                1,
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/project/BatchNorm/FusedBatchNorm",
+            "index": 93,
+            "shape": [
+                1,
+                65,
+                65,
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/project/Conv2D_bias",
+            "index": 94,
+            "shape": [
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_2/project/weights",
+            "index": 95,
+            "shape": [
+                12,
+                1,
+                1,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/depthwise/Relu6",
+            "index": 96,
+            "shape": [
+                1,
+                33,
+                33,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/depthwise/depthwise_bias",
+            "index": 97,
+            "shape": [
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/depthwise/depthwise_weights",
+            "index": 98,
+            "shape": [
+                1,
+                3,
+                3,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/expand/Conv2D_bias",
+            "index": 99,
+            "shape": [
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/expand/Relu6",
+            "index": 100,
+            "shape": [
+                1,
+                65,
+                65,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/expand/weights",
+            "index": 101,
+            "shape": [
+                72,
+                1,
+                1,
+                12
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/project/BatchNorm/FusedBatchNorm",
+            "index": 102,
+            "shape": [
+                1,
+                33,
+                33,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/project/Conv2D_bias",
+            "index": 103,
+            "shape": [
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_3/project/weights",
+            "index": 104,
+            "shape": [
+                16,
+                1,
+                1,
+                72
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/add",
+            "index": 105,
+            "shape": [
+                1,
+                33,
+                33,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/depthwise/Relu6",
+            "index": 106,
+            "shape": [
+                1,
+                33,
+                33,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/depthwise/depthwise_bias",
+            "index": 107,
+            "shape": [
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/depthwise/depthwise_weights",
+            "index": 108,
+            "shape": [
+                1,
+                3,
+                3,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/expand/Conv2D_bias",
+            "index": 109,
+            "shape": [
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/expand/Relu6",
+            "index": 110,
+            "shape": [
+                1,
+                33,
+                33,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/expand/weights",
+            "index": 111,
+            "shape": [
+                96,
+                1,
+                1,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/project/BatchNorm/FusedBatchNorm",
+            "index": 112,
+            "shape": [
+                1,
+                33,
+                33,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/project/Conv2D_bias",
+            "index": 113,
+            "shape": [
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_4/project/weights",
+            "index": 114,
+            "shape": [
+                16,
+                1,
+                1,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/add",
+            "index": 115,
+            "shape": [
+                1,
+                33,
+                33,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/depthwise/Relu6",
+            "index": 116,
+            "shape": [
+                1,
+                33,
+                33,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/depthwise/depthwise_bias",
+            "index": 117,
+            "shape": [
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/depthwise/depthwise_weights",
+            "index": 118,
+            "shape": [
+                1,
+                3,
+                3,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/expand/Conv2D_bias",
+            "index": 119,
+            "shape": [
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/expand/Relu6",
+            "index": 120,
+            "shape": [
+                1,
+                33,
+                33,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/expand/weights",
+            "index": 121,
+            "shape": [
+                96,
+                1,
+                1,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/project/BatchNorm/FusedBatchNorm",
+            "index": 122,
+            "shape": [
+                1,
+                33,
+                33,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/project/Conv2D_bias",
+            "index": 123,
+            "shape": [
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_5/project/weights",
+            "index": 124,
+            "shape": [
+                16,
+                1,
+                1,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/depthwise/Relu6",
+            "index": 125,
+            "shape": [
+                1,
+                33,
+                33,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/depthwise/depthwise_bias",
+            "index": 126,
+            "shape": [
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/depthwise/depthwise_weights",
+            "index": 127,
+            "shape": [
+                1,
+                3,
+                3,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/expand/Conv2D_bias",
+            "index": 128,
+            "shape": [
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/expand/Relu6",
+            "index": 129,
+            "shape": [
+                1,
+                33,
+                33,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/expand/weights",
+            "index": 130,
+            "shape": [
+                96,
+                1,
+                1,
+                16
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/project/BatchNorm/FusedBatchNorm",
+            "index": 131,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/project/Conv2D_bias",
+            "index": 132,
+            "shape": [
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_6/project/weights",
+            "index": 133,
+            "shape": [
+                32,
+                1,
+                1,
+                96
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/add",
+            "index": 134,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/depthwise/Relu6",
+            "index": 135,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/depthwise/depthwise_bias",
+            "index": 136,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/depthwise/depthwise_weights",
+            "index": 137,
+            "shape": [
+                1,
+                3,
+                3,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/expand/Conv2D_bias",
+            "index": 138,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/expand/Relu6",
+            "index": 139,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/expand/weights",
+            "index": 140,
+            "shape": [
+                192,
+                1,
+                1,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/project/BatchNorm/FusedBatchNorm",
+            "index": 141,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/project/Conv2D_bias",
+            "index": 142,
+            "shape": [
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_7/project/weights",
+            "index": 143,
+            "shape": [
+                32,
+                1,
+                1,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/add",
+            "index": 144,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/depthwise/Relu6",
+            "index": 145,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/depthwise/depthwise_bias",
+            "index": 146,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/depthwise/depthwise_weights",
+            "index": 147,
+            "shape": [
+                1,
+                3,
+                3,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/expand/Conv2D_bias",
+            "index": 148,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/expand/Relu6",
+            "index": 149,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/expand/weights",
+            "index": 150,
+            "shape": [
+                192,
+                1,
+                1,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/project/BatchNorm/FusedBatchNorm",
+            "index": 151,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/project/Conv2D_bias",
+            "index": 152,
+            "shape": [
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_8/project/weights",
+            "index": 153,
+            "shape": [
+                32,
+                1,
+                1,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/add",
+            "index": 154,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/depthwise/Relu6",
+            "index": 155,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/depthwise/depthwise_bias",
+            "index": 156,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/depthwise/depthwise_weights",
+            "index": 157,
+            "shape": [
+                1,
+                3,
+                3,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/expand/Conv2D_bias",
+            "index": 158,
+            "shape": [
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/expand/Relu6",
+            "index": 159,
+            "shape": [
+                1,
+                33,
+                33,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/expand/weights",
+            "index": 160,
+            "shape": [
+                192,
+                1,
+                1,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/project/BatchNorm/FusedBatchNorm",
+            "index": 161,
+            "shape": [
+                1,
+                33,
+                33,
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/project/Conv2D_bias",
+            "index": 162,
+            "shape": [
+                32
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "MobilenetV2/expanded_conv_9/project/weights",
+            "index": 163,
+            "shape": [
+                32,
+                1,
+                1,
+                192
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "ResizeBilinear_1",
+            "index": 164,
+            "shape": [
+                1,
+                33,
+                33,
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "ResizeBilinear_1/size",
+            "index": 165,
+            "shape": [
+                2
+            ],
+            "dtype": "numpy.int32"
+        },
+        {
+            "name": "ResizeBilinear_2",
+            "index": 166,
+            "shape": [
+                1,
+                33,
+                33,
+                21
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "ResizeBilinear_2/size",
+            "index": 167,
+            "shape": [
+                2
+            ],
+            "dtype": "numpy.int32"
+        },
+        {
+            "name": "ResizeBilinear_3",
+            "index": 168,
+            "shape": [
+                1,
+                257,
+                257,
+                21
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "aspp0/Conv2D_bias",
+            "index": 169,
+            "shape": [
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "aspp0/Relu",
+            "index": 170,
+            "shape": [
+                1,
+                33,
+                33,
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "aspp0/weights",
+            "index": 171,
+            "shape": [
+                256,
+                1,
+                1,
+                160
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "concat",
+            "index": 172,
+            "shape": [
+                1,
+                33,
+                33,
+                512
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "concat_projection/Conv2D_bias",
+            "index": 173,
+            "shape": [
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "concat_projection/Relu",
+            "index": 174,
+            "shape": [
+                1,
+                33,
+                33,
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "concat_projection/weights",
+            "index": 175,
+            "shape": [
+                256,
+                1,
+                1,
+                512
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "image_pooling/Conv2D_bias",
+            "index": 176,
+            "shape": [
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "image_pooling/Relu",
+            "index": 177,
+            "shape": [
+                1,
+                1,
+                1,
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "image_pooling/weights",
+            "index": 178,
+            "shape": [
+                256,
+                1,
+                1,
+                160
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "logits/semantic/BiasAdd",
+            "index": 179,
+            "shape": [
+                1,
+                33,
+                33,
+                21
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "logits/semantic/Conv2D_bias",
+            "index": 180,
+            "shape": [
+                21
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "logits/semantic/weights",
+            "index": 181,
+            "shape": [
+                21,
+                1,
+                1,
+                256
+            ],
+            "dtype": "numpy.float32"
+        },
+        {
+            "name": "strided_slice_8",
+            "index": 182,
+            "shape": [
+                2
+            ],
+            "dtype": "numpy.int32"
+        },
+        {
+            "name": "sub_7",
+            "index": 183,
+            "shape": [
+                1,
+                257,
+                257,
+                3
+            ],
+            "dtype": "numpy.float32"
+        }
+    ]
+}

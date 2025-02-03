@@ -28,8 +28,8 @@ This project aims to detect and assess the impact of *Prosopis juliflora* using 
 ---
 
 ## **Technology Stack**
-- **Python Libraries**: `numpy`, `rasterio`, `matplotlib`, `tensorflow`, `pandas`
-- **Deep Learning**: `DeepLabv3+` (TensorFlow/Keras backend)
+- **Python Libraries**: `numpy`, `rasterio`, `matplotlib`, `torch`, `pandas`
+- **Deep Learning**: `DeepLabv3+` (Keras backend)
 - **Geospatial Processing**: `QGIS`, `rasterio`
 - **Visualization**: `matplotlib`, `seaborn`
 
@@ -39,7 +39,9 @@ This project aims to detect and assess the impact of *Prosopis juliflora* using 
 ### **Prerequisites**
 Ensure you have the following installed:
 - Python 3.8+
-- TensorFlow
+- Torch
+- torchaudio
+- torchvision
 - NumPy
 - Rasterio
 - Matplotlib
@@ -47,7 +49,7 @@ Ensure you have the following installed:
 
 ### **Installation**
 ```bash
-pip install numpy rasterio matplotlib tensorflow pandas
+pip install numpy rasterio matplotlib torch pandas
 ```
 
 ---
